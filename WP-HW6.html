@@ -60,13 +60,13 @@
             $.each(allDepartment, function(index, value) {
                 $("#college").append("<option>" + value.college + "</option>");
             });
-            $.each(allDepartment[0].department, function(undex, value) {
+            $.each(allDepartment[0].department, function(index, value) {
                 $("#department").append("<option>" + value + "</option>");
             });
             $("#college").change(function() {
                 $("#department").empty();
                 var index = $("#college").prop("selectedIndex");
-                $.each(allDepartment[index].department, function(undex, value) {
+                $.each(allDepartment[index].department, function(index, value) {
                     $("#department").append("<option>" + value + "</option>");
                 });
             });
